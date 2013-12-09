@@ -1,7 +1,13 @@
-/* */
-@import "normalize";
+/*!
+    aalam.in - 'see i decide th look'
+ */
+@import "partials/normalize";
+
+@import "partials/variables";
 
 /* Partials */
 @import "partials/utils";
+
+@import "partials/modules";
 
 
