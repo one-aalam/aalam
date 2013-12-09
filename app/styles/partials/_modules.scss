@@ -34,3 +34,10 @@
 body{
     background-color: $bg-color ;
 }
+
+hgroup.meet-aalam img{
+    @include oval(50%);
+    height: 150px;
+    background-color: hsl(0, 0%, 75%);
+    border:2px solid silver;
+}

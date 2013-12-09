@@ -1,0 +1,26 @@
+.text-left{
+	text-align:left;
+}
+.text-right{
+	text-align:right;
+}
+.text-center{
+	text-align:center;
+}
+.text-capitalize, .capitalize{
+	text-transform: uppercase;
+}
+.text-none{
+	line-height: 0; 
+    font-size: 0;
+    color: transparent;
+    text-decoration:none;
+	display:inline-block;
+}
+.text-small,.mini,.ft{
+	font-size:.5em;
+}
+.link-btn{
+	text-decoration:none;
+	display:inline-block;
+}
