@@ -47,11 +47,10 @@ $phone-maxwidth: 479px;
 	}
 }
 
-@mixin oval($radius){
-	-webkit-border-radius: $radius;
-	-moz-border-radius: $radius;
-	-o-border-radius: $radius;
-	-ms-border-radius: $radius;
+@mixin oval($radius:0,$vendor-prefix:(webkit, moz, o, ms)){
+	@each $vendor in $vendor-prefix{
+		-#{$vendor}-border-radius: $radius;
+	}
 	border-radius: $radius;
 }
 

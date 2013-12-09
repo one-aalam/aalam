@@ -1,12 +1,25 @@
-.text-left{
-	text-align:left;
+$links-ext: (twitter, facebook, in, vcard, skype);
+$text-align: (left, right, center);
+
+.social{
+	padding-left:32px;
+	height:32px;
+	@each $link in $links-ext{
+		#soc-#{$link}{
+			background: url(icons/#{$link}_dark.png) no-repeat;
+			&:hover, &:focus{
+				background: url(icons/#{$link}_active.png) no-repeat;
+			}
+		}
+	}
 }
-.text-right{
-	text-align:right;
+
+@each $alignment in $text-align{
+	.text-#{$alignment}{
+		text-align:#{$alignment};
+	}
 }
-.text-center{
-	text-align:center;
-}
+
 .text-capitalize, .capitalize{
 	text-transform: uppercase;
 }
