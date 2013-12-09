@@ -3,9 +3,26 @@
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
-header[role="banner"],footer[role="contentinfo"] {
+
+html, body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    display:block;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+	position:relative;
+}
+section, header[role="banner"]{
+	width:100%;
+	height:auto;
+	min-height:100%;
+	position:relative;
+}
+footer[role="contentinfo"] {
 	width: 100%;
-	display: block;
 }
 footer[role="contentinfo"] {
 	clear: both;
